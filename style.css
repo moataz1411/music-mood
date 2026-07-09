@@ -346,3 +346,21 @@ footer{
 .card-romantic{
     background: #ff5c8a;
 }
+#greeting{
+    margin:30px auto;
+    padding:10px 22px;
+    background: white;
+    backdrop-filter: blur(10px);
+    font-size: 24px;
+    font-weight: bold;
+    color:#ff5c8a;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    display: inline-block;
+    transform: rotate(-2deg);
+    border: 3px dashed#ff5c8a;
+    border-radius: 999px;
+}
+#greeting:hover{
+    transform: rotate(2deg) scale(1.05);
+    transition: 0.3s;
+}
