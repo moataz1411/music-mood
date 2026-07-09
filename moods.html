@@ -16,7 +16,6 @@
         </div>
     <nav>
         <a href=".">HOME PAGE</a>
-        <a href ="about.html">ABOUT</a>
         <a href="moods.html">MOODS</a>
         <button id="themebtn">🌙</button>
     </nav>
@@ -27,42 +26,65 @@
         choose ur mood, and find ur vibes
         </p>
     </section>
-    <section class="moodchoose">
-        <div class="card-happy" onclick="showMood('happy')">
-            <h2>Happy</h2>
-            😊
-        </div>
-        <div class="card-sad" onclick="showMood('sad')">
-            <h2>Sad</h2>
-            😢
-        </div>
-        <div class="card-focused" onclick="showMood('focus')">
-            <h2>Focused</h2>
-            😎
-        </div>
-        <div class="card-chill" onclick="showMood('chill')">
-            <h2>Chill</h2>
-            😌
-        </div>
-        <div class="card-romantic" onclick="showMood('romantic')">
-            <h2>Romantic</h2>
-            😍
-        </div>
-    </section>
+<section class="moodchoose">
+    <div class="card-happy" onclick="showMood('happy')">
+    <div class="emoji">😊</div>
+    <h2>Happy</h2>
+    <p>Feel Good Hits</p>
+    <span>15 Songs</span>
+    <button>▶</button>
+    </div>
+    <div class="card-sad" onclick="showMood('sad')">
+    <div class="emoji">😢</div>
+    <h2>Sad</h2>
+    <p>Late Night Tears</p>
+    <span>18 Songs</span>
+    <button>▶</button>
+    </div>
+    <div class="card-focused" onclick="showMood('focus')">
+    <div class="emoji">📚</div>
+    <h2>Focus</h2>
+    <p>Deep lock in</p>
+    <span>20 Songs</span>
+    <button>▶</button>
+    </div>
+    <div class="card-chill" onclick="showMood('chill')">
+    <div class="emoji">😌</div>
+    <h2>Chill</h2>
+    <p>Coffee and Sunset</p>
+    <span>16 Songs</span>
+    <button>▶</button>
+    </div>
+    <div class="card-romantic" onclick="showMood('romantic')">
+    <div class="emoji">💕</div>
+    <h2>Romantic</h2>
+    <p>aaaah, Love Stories with love endies</p>
+    <span>12 Songs</span>
+    <button>▶</button>
+    </div>
+</section>
+
     <section class="player">
-        <h2 id="moodtitle">choose a mood</h2>
-        <p id="quote">ur music is ur mood, sweetie.</p>
-        <ul id ="song">
-            <li>ur mooood firstttttt!!!!</li>
-        </ul>
+        <div class="selectmood">
+            <div id="bgemoji">
+                🎵
+            </div>
+        <div>
+            <h2 id="moodtitle">Choose a Mood</h2>
+        <p id="moodquote">ur music is ur mood, sweetie.</p>
+        </div>
+        </div>
+        <div id ="moodsong">
+           <p class="empty">choose ur mooood firstttt!!!!</p>
+    </div>
         <iframe
         id="spotifyPlayer"
-        style="border-radius:20px"
+        style="border-radius:20px; margin-top: 25px;"
         src=""
         width="100%"
         height="380"
         frameborder="0"
-        allowfullscreen=""
+        allowfullscreen
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
 </iframe>
     </section>
