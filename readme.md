@@ -31,6 +31,12 @@ He believes that every mood has its own music.
 
 ---
 
+**Usage of AI**
+
+I used AI as a helper. It mainly helped me to make the UI by suggesting design ideas and layouts, and assisted in debugging just it. i didnt use ai for any line of code.
+
+---
+
 **Languages used**
 
 - HTML
