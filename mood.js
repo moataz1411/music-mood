@@ -1,6 +1,6 @@
 const moods={
     happy:{
-        emoji:"😊",
+        
         title:"Happy",
         quote:"Happiness is the best makeup btw.",
         color:"#FFE066",
@@ -12,7 +12,7 @@ const moods={
 },
 
     sad:{
-        emoji:"😢",
+        
         color:"#B8C0FF",
         title:"Sad",
         quote:"sorry but, Crying burns calories...technically.",
@@ -23,7 +23,7 @@ const moods={
         ]
 },
     chill:{
-        emoji:"😌",
+        
         color:"#BDEFFF",
         title:"Chill",
         quote:"Doing absolutely nothing is a full-time job.",
@@ -34,7 +34,7 @@ const moods={
         ]
 },
     focus:{
-        emoji:"📚",
+        
         color:"#D5F5C3",
         title:"Focus",
         quote:"Focus now, flex later.",
@@ -45,7 +45,7 @@ const moods={
         ]
 },
     romantic:{
-        emoji:"💕",
+        
         color:"#FFD6E7",
         title:"Romantic",
         quote:"I wish I could feel this mood... but I'm single.",
@@ -59,7 +59,6 @@ const moods={
 function showMood(name){
     const mood=moods[name];
     document.getElementById("moodtitle").innerHTML=mood.title;
-    document.getElementById("bgemoji").innerHTML=mood.emoji;
     document.getElementById("moodquote").innerHTML=mood.quote;
     document.getElementById("spotifyPlayer").src=mood.playlist;
     document.body.style.background=`linear-gradient(135deg, ${mood.color}, #ffffff, #fce8ff)`;
